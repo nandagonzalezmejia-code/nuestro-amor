@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi amor 💗</title>
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  text-align: center;
+  color: #793c58;
+  background: linear-gradient(135deg,#ffe4ef,#fff6f9,#f9d6e5);
+  min-height: 100vh;
+}
+main { max-width: 650px; margin: auto; padding: 35px 20px; }
+h1 { font-size: 2.4em; }
+.card {
+  background: #ffffffc9;
+  border-radius: 22px;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 5px 18px #d99bb744;
+}
+button {
+  background: #e879a5; color: white; border: 0;
+  padding: 13px 20px; border-radius: 25px;
+  margin: 7px; cursor: pointer; font-size: 16px;
+}
+button:hover { background: #c94f83; }
+.secret { display: none; line-height: 1.8; }
+.heart { font-size: 30px; animation: latir 1s infinite; }
+@keyframes latir { 50% { transform: scale(1.2); } }
+</style>
+</head>
+<body>
+<main>
+  <div class="heart">💗 💗 💗</div>
+  <h1>Para el amor de mi vida</h1>
+  <p>Hice este pequeño lugar solo para ti, mi amor.</p>
+  <p>Aunque estemos lejos, mi corazón siempre está contigo. 🌎</p>
+
+  <div class="card">
+    <h2>💌 Tengo algo que decirte</h2>
+    <button onclick="mostrar('carta')">Abre tu cartita 💕</button>
+    <div id="carta" class="secret">
+      Quiero que sepas que eres alguien muy especial para mí.
+      Gracias por llegar a mi vida, por hacerme sonreír y por
+      regalarme momentos que guardo con muchísimo cariño.
+      Aunque no pueda abrazarte ahora, deseo hacerlo pronto.
+      Te quiero más de lo que a veces sé explicar. ❤️
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🥺 Cuando me extrañes</h2>
+    <button onclick="mostrar('extraño')">Toca aquí</button>
+    <div id="extraño" class="secret">
+      Cierra tus ojitos e imagina que te abrazo muy fuerte.
+      La distancia nos separa por ahora, pero aquí hay alguien
+      que piensa en ti y sueña con volver a estar cerquita. 🫂💗
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>💖 Una última cosita...</h2>
+    <button onclick="mostrar('final')">Mi sorpresa final ✨</button>
+    <div id="final" class="secret">
+      Mi deseo es que nos queden muchísimos recuerdos por crear,
+      risas por compartir y abrazos pendientes por darnos.
+      Gracias por ser parte de mi historia. Te elijo con cariño,
+      hoy y cada día. 💗🌷
+      <p>Con todo mi amor, para ti. 💋</p>
+    </div>
+  </div>
+  <p>Hecho con amor, especialmente para ti. 💞</p>
+</main>
+<script>
+function mostrar(id) {
+  const elemento = document.getElementById(id);
+  elemento.style.display =
+    elemento.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+</body>
+</html>
